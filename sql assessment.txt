@@ -18,7 +18,7 @@ task-1
 Write sql query to find the items whose prices are higher than or equal 250rs.
 Order the result by product price in descending, then product name in
 ascending. Return pro_name and pro_price 
-
+-->
 
 SELECT PRO_NAME,PRO_PRICE FROM product where PRO_PRICE>=250;
 SELECT PRO_NAME,PRO_PRICE FROM product ORDER BY PRO_NAME ASC;
@@ -27,18 +27,13 @@ SELECT PRO_NAME,PRO_PRICE FROM product ORDER BY PRO_PRICE DESC;
 task-2
  Write a sql query to find the cheapest item. Return pro_name and pro_price.
 
-SELECT PRO_NAME, MIN (PRO_PRICE) FROM product;
+-->SELECT PRO_NAME, MIN (PRO_PRICE) FROM product;
 
 
 task-3
  Write the sql query to calculate the average price of the items for each
 company. Return average price and company code.
-
-
-
-task-4
- Write the sql query to find the average total for all the product mention in the
-table
+-->
 
 SELECT AVG(PRO_PRICE) FROM product;
 SELECT AVG(PRO_COMM) FROM product;
@@ -50,6 +45,13 @@ SELECT AVG(PRO_COMM) AS avg_pro_comm FROM product;
 
 SELECT AVG(PRO_PRICE) AS average_total
 FROM product;
+
+
+task-4
+ Write the sql query to find the average total for all the product mention in the
+table
+
+-->SELECT AVG(PRO_PRICE) FROM product;
 
 
 
